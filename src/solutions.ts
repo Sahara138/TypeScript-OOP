@@ -7,7 +7,7 @@ function filterEvenNumbers(num: number[]){
     })
     return evenNumber;
 }
-
+filterEvenNumbers([1,2,3,4,5,6]);
 // console.log(filterEvenNumbers([1,2,3,4,5,6]))
 
 // Problem-2
@@ -18,7 +18,7 @@ const reverseString = (word: string) => {
     return reverseWord ;
 }
 
-
+reverseString("typescript");
 // console.log(reverseString("typescript"))
 
 // Problem - 3
@@ -29,7 +29,7 @@ function checkType(value: StringOrNumber) {
         ? "String"
         : "Number";
 }
-
+checkType("Hello")
 // console.log(checkType("Hello"));
 // console.log(checkType(42));
 
@@ -38,6 +38,7 @@ const getProperty = <T>(obj: T,key:keyof T) => {
     return obj[key];
 }
 const property = { id: 1, propertyName: "Land ", place: "Uttara" };
+getProperty(property ,"propertyName");
 // console.log(getProperty(property ,"propertyName"));
 
 
@@ -55,6 +56,7 @@ const toggleReadStatus =(book:Book)=> {
     }
 }
 const myBook = { title: "TypeScript Guide", author: "Jane Doe", publishedYear: 2024 };
+toggleReadStatus(myBook);
 // console.log(toggleReadStatus(myBook));
 
 
@@ -92,6 +94,7 @@ const getIntersection = (arr1: number[], arr2: number[]): number[] => {
     return arr1.filter(value => arr2.includes(value));
 };
 
+getIntersection([1,2,3,4,5,6], [3,4,5,6])
 // console.log(getIntersection([1,2,3,4,5,6], [3,4,5,6]));
 
 
